@@ -27,14 +27,13 @@
 
    <!-- Plugins -->  
    <!-- Core plugins -->  
+<plugin name="com.brodysoft.sqliteplugin" source="pgb" spec="1.0.6" />
+<plugin name="org.apache.cordova.file-transfer" source="pgb" spec="0.5.0" />
+<plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+<plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.13" />
 
-   <gap:plugin name="org.apache.cordova.splashscreen" />  
-   <gap:plugin name="org.apache.cordova.vibration" /> 
-   <gap:plugin name="org.apache.cordova.file-transfer" version="0.5.0" />
- 
 
-   <!-- Third party plugins -->  
-   <gap:plugin name="com.brodysoft.sqliteplugin" version="1.0.6" />
+
 
    
    <!-- Define los iconos de la aplicacion para cada plataforma -->  

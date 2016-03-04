@@ -67,7 +67,7 @@ correo = $('#correoe').val();
 procedencia = $('#procedenciaa').val();
 carrera = $('#scarrera').val();
 
-
+alert (nombre);
 db.transaction(function(tx) {
               tx.executeSql("INSERT INTO registros (nombre, correo, procedencia, carrera) VALUES (?,?,?,?)", [nombre, correo, procedencia, carrera], function(tx, res) {
 				  				  $("#confirmacion").popup();
