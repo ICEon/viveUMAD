@@ -23,7 +23,7 @@
    <preference name="fullscreen"         value="true" />      
    <preference name="android-installLocation"  value="auto" />  
    <preference name="SplashScreen" value="splash"/>
-   <preference name="SplashScreenDelay" value="1500"/>
+   <preference name="SplashScreenDelay" value="2300"/>
 
    <!-- Plugins -->  
    <!-- Core plugins -->  
