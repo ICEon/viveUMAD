@@ -175,6 +175,16 @@ $('#continuar').on('tap', function (){
         scrollTop: 0 
     }, 200);
 });
+
+$('#btndatos').on('tap', function(){
+  $("#opciones").popup();
+  $("#opciones").popup("open");	 
+
+ });
+
+
  }
+ 
+ 
  
 });
