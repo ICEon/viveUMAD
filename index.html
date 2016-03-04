@@ -31,7 +31,7 @@
     <a href="#" data-icon="bullets" class="ui-btn-right" id="btndatos" ><span style="font-size:1.5em; color:#911FAD; font-weight:bold" id="cuantas">0</span></a>
   </div>
 
-  <div data-role="main" class="ui-content">
+  <div data-role="main" class="ui-content" id="div_ppal" >
   <!-- Pop Up Confirmacion-->
   <div data-role="popup" id="confirmacion" data-overlay-theme="a" data-theme="b" data-dismissible="false">
       <div data-role="header" data-theme="a">
@@ -68,6 +68,22 @@
     </div>
     
     <!-- Pop up Opciones -->
+    
+    <!-- Pop Up Exportado -->
+     <div data-role="popup" id="exportado" data-overlay-theme="a" data-theme="b">
+      <div data-role="header" data-theme="a">
+        <h1 style=" margin:1px 20px 1px;">Confirmación</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+       <div align="center">
+        <h3>Archivo <span id="archivo"></span> creado</h3>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Continuar</a>
+       </div>
+      </div>
+    </div> 
+    <!-- Pop Up Exportado -->
+    
     <div style="width: 80%; margin:0 auto; text-align:center;" class="formulario">
      <div>
       <input name="nombrea" id="nombrea" type="text" class="eformulario" placeholder="Nombre" data-clear-btn="true"/>

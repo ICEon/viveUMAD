@@ -81,3 +81,7 @@ input:focus {
 	text-align: center;
 	padding: 5px;
  }
+
+#div_ppal {
+  background: url(recursos/imagenes/logo_1.png) right top no-repeat, url(recursos/imagenes/vive.png) left bottom no-repeat;	
+}
