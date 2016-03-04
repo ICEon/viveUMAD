@@ -36,13 +36,13 @@ input:focus {
 }
 
 .formulario div{
-	margin: 10px auto 0;
+	margin: 8px auto 0;
 	width: 97%;
 	text-align: center;	
 }
 
 #carrera span{
-	font-size: 1.5em;
+	font-size: 1.3em;
     font-weight:bold;
 	color: #193350;
 }
@@ -56,3 +56,14 @@ input:focus {
   vertical-align: middle;
 }
 
+#guardar
+ {
+	font-size: 100%;
+	font-weight:bold;
+	margin: 5px 5px 5px;
+	color: #ed1941;	
+	border: 2px solid #0181CA;
+	border-radius: 25px;	
+	text-align: center;
+	padding: 5px; 
+ }
