@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>vive UMAD</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">        
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">        
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+ </head>
+
+ <body>
+ 
+ <!-- Principal -->
+ <div data-role="page" id="principal" >   
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <div id="titulo">
+     Registro vive <span style="color:#B2001E">UMAD</span>
+    </div>
+    <a href="#" data-icon="bullets" class="ui-btn-right" id="btndatos" ><span style="font-size:1.5em; color:#911FAD; font-weight:bold" id="cuantas">0</span></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div style="width: 88%; margin:0 auto; text-align:center; border: 1px red solid;" class="formulario">
+     <div>
+      <input name="nombre" id="nombre" type="text" class="eformulario" placeholder="Nombre" data-clear-btn="true"/>
+     </div>
+     <div style="margin:0 auto; text-align:center; vertical-align:top;">
+        <input name="correo" id="correo" type="text" placeholder="Correo Electronico" data-clear-btn="true"/>
+        <div style="width: 30%; text-align: center; display: inline-block;">
+          <span><i class="ion-chevron-left grande"> </i> </span>
+          <img id="imagenc" src="recursos/imagenes/gmail.png">
+          <span><i class="ion-chevron-right grande"> </i> </span>
+        </div>
+     </div>
+     <div>
+      <input name="procedencia" id="procedencia" type="text" class="eformulario" placeholder="Escuela de Procedencia" data-clear-btn="true"/>
+     </div>
+     <div>
+      <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+       <option>Selecciona la carrera</option>
+       <option value="Ing. Software"> Ingeniería de Software </option>
+       <option value="Ing. TII"> Ingeniería Tecnologías de Información e Internet </option>
+      </select>
+     </div>
+    </div>
+  </div>  
+ </div>
+ <!-- Principal -->
+ </body>
+</html> 
