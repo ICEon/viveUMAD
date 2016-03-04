@@ -32,15 +32,16 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <div style="width: 80%; margin:0 auto; text-align:center; border: 1px red solid;" class="formulario">
+    <div style="width: 80%; margin:0 auto; text-align:center;" class="formulario">
      <div>
       <input name="nombre" id="nombre" type="text" class="eformulario" placeholder="Nombre" data-clear-btn="true"/>
      </div>
      <div style="margin:0 auto; text-align:center; vertical-align:top;">
-        <div style=" display: inline-block; width: 68%;">
-          <input name="correo" id="correo" type="text" placeholder="Correo" data-clear-btn="true"/>
+
+        <div style=" display: inline-block; width: 70%;">
+          <input name="correoe" id="correoe" type="text" class="eformulario" placeholder="Correo" data-clear-btn="true"/>
         </div>
-        <div id="correos">
+        <div style="width: 25%;  height: 100%;  display: inline-block;">
           <span><i class="ion-chevron-left grande"> </i> </span>
           <img id="imagenc" src="recursos/imagenes/gmail.png"/>
           <span><i class="ion-chevron-right grande"> </i> </span>
@@ -49,12 +50,12 @@
      <div>
       <input name="procedencia" id="procedencia" type="text" class="eformulario" placeholder="Escuela de Procedencia" data-clear-btn="true"/>
      </div>
-     <div>
+     <div id="carrera">
 
-      <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
-       <option>Selecciona la carrera</option>
+      <select name="scarrera" id="scarrera" data-native-menu="false">
+       <option>Selecciona una carrera</option>
        <option value="Ing. Software"> Ingeniería de Software </option>
-       <option value="Ing. TII"> Ingeniería Tecnologías de Información e Internet </option>
+       <option value="Ing. TII"> Ingeniería en Tecnologías de Información e Internet </option>
       </select>
      </div>
     </div>
