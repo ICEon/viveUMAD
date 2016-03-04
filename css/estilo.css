@@ -29,9 +29,9 @@ input:focus {
 }
 
 #imagenc {
-	padding: 0 5px;
+	padding: 0 1px;
     vertical-align: middle;
-	height: 30px;
+	height: 25px;
 	width: auto;
 }
 
@@ -48,9 +48,9 @@ input:focus {
 }
 
 .grande {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight:bold;
-  padding: 0 2px;
+  padding: 0;
   display: inline-block;
   color: #E67E22;
   vertical-align: middle;
