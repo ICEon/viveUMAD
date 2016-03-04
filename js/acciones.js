@@ -24,6 +24,7 @@ function conectar_base()
 $(document).ready(function(e) {
  document.addEventListener("deviceready", onDeviceReady, false);
  function onDeviceReady() {
+	  conectar_base();
   	$('#imagenc').on('swipe', function() {
 		var $nombre = $(this).attr('src');
 		$nombre = $nombre.substring(18);
