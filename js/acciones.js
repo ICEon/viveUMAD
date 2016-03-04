@@ -4,6 +4,78 @@ var correo = "";
 var procedencia = "";
 var carrera = "";
 var db;
+var $contenido = "";
+var $nombre="";
+
+
+            function gotFS(fileSystem) {
+
+				 var fecha = new Date();
+
+ 
+$nombre = fecha.getDate() + "-" + (fecha.getMonth() +1) + "-" + fecha.getFullYear() + "-" + fecha.getHours() + "-" + fecha.getMinutes() + "-" + fecha.getSeconds();
+
+   fileSystem.root.getDirectory("vivencia_UMAD_16", {create: true}, gotDir);
+}
+
+function gotDir(dirEntry) {
+    dirEntry.getFile($nombre+".csv", {create: true, exclusive: true}, gotFileEntry);
+
+
+            }
+
+            function gotFileEntry(fileEntry) {
+                fileEntry.createWriter(gotFileWriter, fail);
+            }
+
+            function gotFileWriter(writer) {
+                writer.onwrite = function(evt) {				
+					
+                    console.log("Correcto");
+                };
+
+                writer.write($contenido);
+				$("#archivo").html($nombre + ".csv");
+				$("#exportado").popup();
+                $("#exportado").popup("open");	 
+				
+                writer.abort();
+
+            }
+
+            function fail(error) {
+                console.log("error : "+error.code);
+            }
+function Guardar()
+{
+	$contenido = "Folio Registro, Nombre, Correo Electronico, Escuela de Procedencia, Carrera" + "\n";
+
+	db.transaction(function(tx) {
+        tx.executeSql("select * from registros;", [], function(tx, res) {
+
+    for (i = 0; i < res.rows.length; i++) { 
+	$contenido = $contenido + res.rows.item(i).folioRegistro + "," + res.rows.item(i).nombre + "," + res.rows.item(i).correo + "," +res.rows.item(i).procedencia + "," + res.rows.item(i).carrera +"\n"; 
+
+    }  
+
+        });
+      });
+		
+		
+
+try
+{
+	
+window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+}
+    catch (e)
+	{
+        alert(e);
+	}
+
+
+}
+
 
 function conectar_base()
  {
@@ -25,6 +97,12 @@ $(document).ready(function(e) {
  document.addEventListener("deviceready", onDeviceReady, false);
  function onDeviceReady() {
 	  conectar_base();
+	  
+  $('#exportar').on('tap', function(){
+     $("#opciones").popup("close");	 
+	 Guardar();
+ });
+  
   	$('#imagenc').on('swipe', function() {
 		var $nombre = $(this).attr('src');
 		$nombre = $nombre.substring(18);
