@@ -23,7 +23,7 @@ input {
 }
 
 #correo {
-  width: 63%;
+  width: 53%;
   height: 100%;
   display: inline-block;
 }
@@ -41,7 +41,9 @@ input:focus {
 }
 
 .formulario div{
-	margin: 10px 0;		
+	margin: 10px auto 0;
+	width: 95%;
+	text-align: center;	
 }
 
 .formulario div span {
@@ -51,4 +53,10 @@ input:focus {
   display: inline-block;
   color:#E67E22;
   vertical-align: middle;
+}
+
+#correos {
+	width: 30%;
+	text-align: center;
+	display: inline-block;
 }
