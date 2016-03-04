@@ -42,7 +42,7 @@ input:focus {
 
 .formulario div{
 	margin: 10px auto 0;
-	width: 95%;
+	width: 98%;
 	text-align: center;	
 }
 
@@ -53,10 +53,4 @@ input:focus {
   display: inline-block;
   color:#E67E22;
   vertical-align: middle;
-}
-
-#correos {
-	width: 30%;
-	text-align: center;
-	display: inline-block;
 }
